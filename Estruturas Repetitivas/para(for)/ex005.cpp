@@ -8,8 +8,8 @@ int main(){
     printf("Digite um valor de X");
     scanf("%i", &x);
     for(i=1; i<x; i++){
-         if(x %2 !=0){
-            
+         if(i %2 !=0){
+            printf("%i \n", i);
         }
     }
 }
