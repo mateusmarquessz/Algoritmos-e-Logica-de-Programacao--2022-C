@@ -23,13 +23,14 @@ int main(){
         } else if(tipoCobaia == 's'){
             totalsapos = totalsapos + cobaias;
         }
-    totalCobaia = totalcoelhos + totalratos + totalsapos;
-    pRatos = totalratos / totalCobaia * 100;
-    pSapos = totalsapos / totalCobaia * 100;
-    pCoelhos = totalcoelhos / totalCobaia * 100;
     }
+            totalCobaia = totalcoelhos + totalratos + totalsapos;
+            pRatos = totalratos / totalCobaia * 100;
+            pSapos = totalsapos / totalCobaia * 100;
+            pCoelhos = totalcoelhos / totalCobaia * 100;
+
     printf("\nRELATORIO FINAL\n");
-    printf("Total:%i \n", totalCobaia);
+    printf("Total:%i de cobaias\n", totalCobaia);
     printf("Total de coelhos:%i \n",totalcoelhos);
     printf("Total de ratos:%i \n", totalratos);
     printf("Total de sapos:%i \n",totalsapos);
