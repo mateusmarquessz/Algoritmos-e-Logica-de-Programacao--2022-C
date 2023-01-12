@@ -15,9 +15,9 @@ int main(){
         printf("Nome:");
         scanf("%s", &vetNome[i]);
         printf("Idade:");
-        scanf("%s", &vetIdade[i]);
+        scanf("%i", &vetIdade[i]);
         printf("Altura");
-        scanf("%s", &vetAltura[i]);
+        scanf("%f", &vetAltura[i]);
     }    
     
     soma = 0;
@@ -30,10 +30,10 @@ int main(){
     cont = 0;
     for(i=0; i<n; i++){
         if(vetIdade[i] < 16){
-            cont = cont + 1;
+            cont++;
         }
     }
-    porcentagem = (cont * 100) / n;
+    porcentagem = cont * 100 / n;
 
     printf("Pessoas com menos de 16 anos:%.1lf %", porcentagem);
 
@@ -42,5 +42,4 @@ int main(){
             printf("%s", vetNome);
         }
     }
-
 }
