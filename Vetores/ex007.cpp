@@ -19,5 +19,11 @@ int main(){
             scanf("%i", &vetB[i]);
         }
     }
-    vetC = vetA + vetB;
+    printf("VETORES RESULTANTES:");
+    for (i = 0; i < n; i++)
+    {
+       vetC[i] = vetA[i] + vetB[i];
+
+        printf("\n %i \n", vetC[i]);
+    }
 }
