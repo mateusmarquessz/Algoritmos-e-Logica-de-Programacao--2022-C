@@ -17,7 +17,6 @@ int main(){
             scanf("%i", &mat[i][j]);
         }
     }
-
     for(i=0; i<m; i++){
         somalinha = 0;
         for (j = 0; j < n; j++){
